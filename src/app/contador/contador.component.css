@@ -1,0 +1,10 @@
+.contador {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333; /* Color del texto */
+  }
+  .espaciado{
+    margin-bottom: 20px;
+  }

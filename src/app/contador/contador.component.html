@@ -1,0 +1,46 @@
+<div class="row">
+    <h1 class="text-center">Tiempo restante de estudio</h1>
+</div>
+<br>
+<div class="container espaciado" *ngIf="flag;else tiempoTerminado">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-body text-center">
+            <h1 class="display-4">{{ dias }}</h1>
+            <p class="lead">Días</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-body text-center">
+            <h1 class="display-4">{{ horas }}</h1>
+            <p class="lead">Horas</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-body text-center">
+            <h1 class="display-4">{{ minutos }}</h1>
+            <p class="lead">Minutos</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-body text-center">
+            <h1 class="display-4">{{ segundos }}</h1>
+            <p class="lead">Segundos</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ng-template #tiempoTerminado>
+    <div class="text-center">
+      <h2>¡Lo siento el tiempo ha terminado ,pero puedes seguir disfrutando de la música!</h2>
+    </div>
+  </ng-template>
+  
